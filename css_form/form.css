@@ -1,0 +1,108 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.contenedor{
+    width: 100%;
+}
+
+.center-div{
+    display: flex; 
+    justify-content: center;
+}
+
+.logo{
+    max-width: 100px; 
+    max-height: 100px;
+}
+
+.titulo{
+    font-size: 20px;
+    color:  #102330;
+}
+
+.parrafo-1{
+    padding-top: 4px;
+    font-size: 15px;
+    color:  #102330;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.estilo-boton-movil{
+    background-color: #102330;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 30px 5px 30px !important;
+    margin-bottom: 20px;
+    border: 1px solid rgb(11, 39, 57);
+    margin-right: 5px !important;
+}
+
+.estilo-boton-fija{
+    background-color: white;
+    color: rgb(11, 39, 57);
+    border-radius: 20px;
+    padding: 5px 35px 5px 35px !important;
+    margin-bottom: 20px;
+    border: 1px solid rgb(11, 39, 57);
+    margin-left: 5px !important;
+    cursor: not-allowed;
+    cursor: inline-block;
+}
+
+.input-numero{
+    margin-right: 5px;
+    padding-left: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: rgb(11, 39, 57);
+    border-width: 1.5px;
+    color: rgb(11, 39, 57);
+}
+
+.input-pais{
+    margin-right: 5px;
+    font-size: 15px;
+    color: rgb(11, 39, 57);
+    border-color: rgb(11, 39, 57);
+    border-width: 1.5px;
+    padding: 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.icono-phone{
+    margin-top: 4px;
+    color: rgb(11, 39, 57);
+    margin-right: 10px;
+}
+
+select {
+    background-image: url(../assets/favicon/angulo-pequeno-hacia-abajo.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    margin-right: 5px;
+}
+
+.estilo-boton-siguiente{
+    background-color: #102330;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 117px 5px 117px !important;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border: 1px solid rgb(11, 39, 57);
+}

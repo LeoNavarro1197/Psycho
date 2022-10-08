@@ -1,0 +1,407 @@
+@import url('fonts.css');
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--f1);
+    outline: 0;
+    text-decoration: none;
+}
+
+.max-width {
+    max-width: max-content;
+}
+
+
+/* BODY */
+
+.home-body {
+    background: var(--bg-lightGray);
+}
+
+
+/* VARIABLES */
+
+:root {
+    /* colors */
+    --white: #ffffff;
+    --black: #000000;
+    --blue: #019df4;
+    --darkBlue: #0c2739;
+    --green: #5BC500;
+    --greenTag: #407f0f;
+    --lightGray: #b5b5b6;
+    --gray: #6D6D6D;
+    --bg-lightGray: #F7F7F7;
+    --blue2: #14abe3;
+    /* fonts */
+    --f1: "Telefonica";
+    --f2: "ico-movistar";
+    --guthen: 'Guthen-bloots';
+}
+
+
+/* COLORS */
+
+.color-white {
+    color: var(--white)!important;
+}
+
+.color-black {
+    color: var(--black)!important;
+}
+
+.color-blue {
+    color: var(--blue)!important;
+}
+
+.color-darkBlue {
+    color: var(--darkBlue)!important;
+}
+
+.color-gray {
+    color: var(--gray)!important;
+}
+
+.color-lightGray {
+    color: var(--lightGray)!important;
+}
+
+.color-green {
+    color: var(--green)!important;
+}
+
+
+/* FONTS */
+
+.ff-telefonica {
+    font-family: var(--f1);
+}
+
+.ff-ico-mov {
+    font-family: var(--f2);
+}
+
+
+/* FONT WEIGHT */
+
+.fw-extra-light {
+    font-weight: 200;
+}
+
+.fw-light {
+    font-weight: 300;
+}
+
+.fw-regular {
+    font-weight: 400;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+
+/* FONT STYLE */
+
+.fs-italic {
+    font-style: italic;
+}
+
+.fs-normal {
+    font-style: normal;
+}
+
+.fs-oblique {
+    font-style: oblique;
+}
+
+
+/* BACKGROUND COLORS */
+
+.bg-white {
+    background-color: var(--white)!important;
+}
+
+.bg-blue {
+    background-color: var(--blue)!important;
+}
+
+.bg-blue2 {
+    background-color: var(--blue2)!important;
+}
+
+.bg-darkBlue {
+    background-color: var(--darkBlue)!important;
+}
+.bg-green {
+    background-color: var(--green)!important;
+}
+
+.bg-greenTag {
+    background-color: var(--greenTag)!important;
+}
+
+.bg-grayLight {
+    background-color: var(--bg-lightGray)!important;
+}
+
+
+/* CURSOR */
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* BUTTONS */
+
+.m-button {
+    width: 100%;
+    max-width: 170px;
+    min-width: 170px;
+    height: 40px;
+    color: #FFF;
+    font-size: 12px;
+    background: var(--blue);
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.m-button::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: center/cover no-repeat;
+    position: absolute;
+    left: 15px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .m-button {
+        font-size: 14px;
+    }
+}
+
+
+/* BUTTON ICONS */
+
+.m-button--i-phone::before {
+    background-image: url(https://www.movistar.co/documents/117302439/408545636/icon_call.png/3f55f152-beca-875d-c4eb-64fb816362f7?t=1607705180758);
+}
+
+.m-button--i-shop::before {
+    background-image: url(https://www.movistar.co/documents/117302439/410506078/icon_shop_white.png/8cd3b019-c3d0-0b4a-43c2-44d1136f4c8a?t=1626288102957);
+}
+
+.m-button--white.m-button--i-phone::before {
+    background-image: url(https://movistar.co/documents/117302439/411722895/icon-call-lightblue.png);
+}
+
+.m-button--white.m-button--i-shop::before {
+    background-image: url(https://www.movistar.co/documents/117302439/408545636/icon_shop-lightBlue.png/5fae5f4b-4b8e-506a-2ee2-be1957085bc4?t=1607705224361);
+}
+
+.m-button--white-darkblue.m-button--i-phone::before {
+    background-image: url(https://www.movistar.co/documents/117302439/410506078/icon_call-darkBlue.png/7c925fd4-f0ac-b85e-5a8b-f61fc2125f94?t=1627654540297);
+}
+
+.m-button--white-darkblue.m-button--i-shop::before {
+    background-image: url(https://www.movistar.co/documents/117302439/408545636/icon_shop-darkBlue.png/032b4215-4b75-88ed-b079-5dc4cc5763c2?t=1607705221075);
+}
+
+
+/* BUTTON SIZES */
+
+.m-button--small {
+    width: 40px;
+    min-width: 40px;
+    padding: 0;
+}
+
+
+/* BUTTON COLORS */
+
+.m-button--darkblue {
+    background: var(--darkBlue);
+}
+
+.m-button--green {
+    background: var(--green);
+}
+
+.m-button--white {
+    color: var(--blue);
+    background: var(--white);
+}
+
+.m-button--white-darkblue {
+    color: var(--darkBlue);
+    background: var(--white);
+}
+
+
+/* BUTTON BORDER */
+
+.m-button--border {
+    border: 1px solid;
+}
+.border-white{
+    border: 1px solid var(--white);
+}
+.border-blue{
+    border: 1px solid var(--blue);
+}
+.border-darkBlue{
+    border: 1px solid var(--darkBlue);
+}
+
+
+/* POSITION */
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.p-fixed {
+    position: fixed;
+}
+
+.p-static {
+    position: static;
+}
+
+
+/* DISPLAY */
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+
+/* FLEX BOX */
+
+.flex-vertical {
+    flex-direction: column;
+}
+
+.flex-horizontal {
+    flex-direction: row;
+}
+
+.flex-top-left {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-top-center {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flex-top-right {
+    justify-content: right;
+    align-items: flex-start;
+}
+
+.flex-center-left {
+    justify-content: left;
+    align-items: center;
+}
+
+.flex-center-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-right {
+    justify-content: right;
+    align-items: center;
+}
+
+.flex-bottom-left {
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.flex-bottom-center {
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.flex-bottom-right {
+    justify-content: left;
+    align-items: flex-end;
+}
+
+
+/* TEXT */
+
+.t-center {
+    text-align: center;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.t-justify {
+    text-align: justify;
+}
+
+
+/* falta por definir */
+
+.i-arrow {
+    content: url(../../pages/persons/home/carousel/images/i-arrow.html);
+}
+
+.i-arrow-blue {
+    content: url(../../pages/persons/home/carousel/images/i-arrow-blue.html);
+}
+
+/* Animation */
+
+.kindanimated[data-animate^="fade"]:not([data-animate-on-secuency]):not([data-animate-on-slider]){
+    opacity: 0;
+}
+
+/* imagen responsive */
+
+.img-resp{
+    max-width: 100%;
+    height: auto;
+}
